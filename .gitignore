@@ -1,0 +1,182 @@
+# DADOS E ARQUIVOS GRANDES
+# ============================================================================
+# CSV, Parquet e outros formatos de dados (manter documentação apenas)
+*.csv
+*.parquet
+*.feather
+*.xlsx
+*.xls
+!vigitel_nomes_descritivos.csv    # Manter mapeamento de variáveis
+!vigitel_documentacao.json          # Manter documentação
+
+# Dados temporários e caches
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+
+# AMBIENTE PYTHON E DEPENDÊNCIAS
+# ============================================================================
+# Ambiente virtual
+.venv/
+venv/
+ENV/
+env/
+.env
+.venv.local
+
+# pip e instalação
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Poetry e outros gerenciadores
+poetry.lock
+Pipfile.lock
+requirements-lock.txt
+
+# Pandas, NumPy, Polars caches
+.pandas_cache/
+.polars_cache/
+
+# JUPYTER E NOTEBOOKS
+# ============================================================================
+# Checkpoints automáticos (but not .ipynb files themselves!)
+.ipynb_checkpoints/
+.jupyter/
+*/.ipynb_checkpoints/
+
+# Saídas de células e metadata pessoal
+.ipython_history
+.ipython/profile_default/history.sqlite
+
+# IDEs E EDITORES
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# SAÍDAS E RESULTADOS
+# ============================================================================
+# Gráficos e visualizações
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+plots/
+figures/
+output/
+results/
+
+# Logs e relatórios
+*.log
+*.log.*
+logs/
+temp/
+tmp/
+cache/
+
+# Arquivos de teste e debug
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+.tox/
+
+# ARQUIVOS DO SISTEMA
+# ============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+._*
+.Spotlight-V100
+.Trashes
+
+# VSCODE EXTENSIONS E SETTINGS PESSOAIS
+# ============================================================================
+.vscode/settings.json
+.vscode/launch.json
+.vscode/*.code-workspace
+.vscode/extensions.json
+
+# GIT E CONTROLE DE VERSÃO
+# ============================================================================
+.git/
+.gitattributes
+.gitmodules
+
+# ARQUIVOS CONFIDENCIAIS
+# ============================================================================
+*.key
+*.pem
+*.crt
+.secrets/
+secrets.json
+config.local.json
+credentials/
+
+# ARQUIVOS COMPILADOS E DISTRIBUÇÕES
+# ============================================================================
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# DADOS GRANDES - EXPLICITAMENTE IGNORADOS
+# ============================================================================
+# Arquivos CSV maiores que 100MB (manter apenas documentação)
+# vigitel-*.csv
+data/raw/
+data/processed/
+data/cache/
+
+# DOCUMENTAÇÃO GERADA (manter apenas fontes)
+# ============================================================================
+site/
+docs/_build/
+.sphinx/
+
+# NODE E WEB (se aplicável)
+# ============================================================================
+node_modules/
+npm-debug.log
+package-lock.json
+
+# FERRAMENTAS DE CI/CD
+# ============================================================================
+.github/workflows/*.log
+.gitlab-ci.yml.local
+.travis.yml.local
+
+# =============================================================================
+# COMENTÁRIOS:
+# - Dados brutos (CSV) são ignorados para economia de storage
+# - Manter mapeamento e documentação JSON/CSV
+# - Jupyter checkpoints são ignorados mas .ipynb notebooks são versionados
+# - Ambientes virtuais são ignorados
+# - Plotagens e outputs são ignorados (regeneráveis)
+# =============================================================================
