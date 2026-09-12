@@ -153,6 +153,7 @@ credentials/
 data/raw/
 data/processed/
 data/cache/
+data/shape_file/
 
 # DOCUMENTAÇÃO GERADA (manter apenas fontes)
 # ============================================================================

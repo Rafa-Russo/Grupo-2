@@ -6,10 +6,11 @@ Pré-requisitos: Python 3.12+ e [uv](https://docs.astral.sh/uv/).
 
 ```powershell
 uv sync
-uv run ingest-crimes
+uv run ingest-listings
 ```
 
 O segundo comando lê as planilhas em `data/crime_data/` e gera `data/crimes.csv`.
+O terceiro lê os CSVs em `data/listings_data/` e gera `data/listings.csv`.
 Os arquivos grandes em `data/` não são versionados. Para executar o projeto a partir de um clone, coloque os dados recebidos pelo grupo nos caminhos esperados:
 
 ```text
